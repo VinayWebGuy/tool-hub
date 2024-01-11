@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Speed Calculator </h3>
+        <div class="main">
+            <div class="row">
+                <div class="form-group">
+                    <label for="distance">Distance</label>
+                    <input type="number" name="distance" id="distance">
+                </div>
+                <div class="form-group">
+                    <label for="unit">Units</label>
+                    <select name="unit" id="unit">
+                        <option selected value="mile">Mile</option>
+                        <option value="kilometer">Kilometer</option>
+                        <option value="yard">Yard</option>
+                        <option value="feet">Feet</option>
+                        <option value="meter">Meter</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label for="hours">Hours</label>
+                    <input type="number" name="hours" id="hours">
+                </div>
+                <div class="form-group">
+                    <label for="minutes">Minutes</label>
+                    <input type="number" name="minutes" id="minutes">
+                </div>
+                <div class="form-group">
+                    <label for="seconds">Seconds</label>
+                    <input type="number" name="seconds" id="seconds">
+                </div>
+            </div>
+            <button id="calculate_speed" class="btn">Calculate</button>
+            <div class="result"></div>
+        </div>
+    </div>
+    <div class="credits">
+        <a target="_blank" href="mailto:vinawebguy@gmail.com">Created by Vinay <i class="fa fa-external-link"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
